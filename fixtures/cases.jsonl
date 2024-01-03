@@ -1,1 +1,2 @@
 {"description": "validate repeated known source markers without judging answer truth", "expected": {"occurrences": 2, "unknown": [], "unused_sources": ["b0"], "used": ["a0"], "valid": true}, "id": "citations-0000", "input": {"answer": "See [a0] and [a0].", "sources": ["a0", "b0"]}}
+{"description": "report source markers absent from the supplied catalog", "expected": {"occurrences": 1, "unknown": ["missing"], "unused_sources": ["a1"], "used": ["missing"], "valid": false}, "id": "citations-0001", "input": {"answer": "See [missing].", "sources": ["a1"]}}
