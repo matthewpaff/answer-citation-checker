@@ -2,3 +2,4 @@
 {"description": "report source markers absent from the supplied catalog", "expected": {"occurrences": 1, "unknown": ["missing"], "unused_sources": ["a1"], "used": ["missing"], "valid": false}, "id": "citations-0001", "input": {"answer": "See [missing].", "sources": ["a1"]}}
 {"description": "require a source marker when citation mode is enabled", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": false}, "id": "citations-0002", "input": {"answer": "No marker.", "sources": []}}
 {"description": "allow uncited text when the explicit policy permits it", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": true}, "id": "citations-0003", "input": {"answer": "No marker.", "require_citation": false, "sources": []}}
+{"description": "reject repeated source catalog IDs", "expected_error": true, "id": "citations-0004", "input": {"answer": "[a4]", "sources": ["a4", "a4"]}}
