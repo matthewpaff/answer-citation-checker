@@ -15,3 +15,4 @@
 {"description": "reject repeated source catalog IDs", "expected_error": true, "id": "citations-0014", "input": {"answer": "[a14]", "sources": ["a14", "a14"]}}
 {"description": "validate repeated known source markers without judging answer truth", "expected": {"occurrences": 2, "unknown": [], "unused_sources": ["b15"], "used": ["a15"], "valid": true}, "id": "citations-0015", "input": {"answer": "See [a15] and [a15].", "sources": ["a15", "b15"]}}
 {"description": "report source markers absent from the supplied catalog", "expected": {"occurrences": 1, "unknown": ["missing"], "unused_sources": ["a16"], "used": ["missing"], "valid": false}, "id": "citations-0016", "input": {"answer": "See [missing].", "sources": ["a16"]}}
+{"description": "require a source marker when citation mode is enabled", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": false}, "id": "citations-0017", "input": {"answer": "No marker.", "sources": []}}
