@@ -27,3 +27,4 @@
 {"description": "report source markers absent from the supplied catalog", "expected": {"occurrences": 1, "unknown": ["missing"], "unused_sources": ["a26"], "used": ["missing"], "valid": false}, "id": "citations-0026", "input": {"answer": "See [missing].", "sources": ["a26"]}}
 {"description": "require a source marker when citation mode is enabled", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": false}, "id": "citations-0027", "input": {"answer": "No marker.", "sources": []}}
 {"description": "allow uncited text when the explicit policy permits it", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": true}, "id": "citations-0028", "input": {"answer": "No marker.", "require_citation": false, "sources": []}}
+{"description": "reject repeated source catalog IDs", "expected_error": true, "id": "citations-0029", "input": {"answer": "[a29]", "sources": ["a29", "a29"]}}
