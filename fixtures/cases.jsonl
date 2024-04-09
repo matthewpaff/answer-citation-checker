@@ -82,3 +82,4 @@
 {"description": "report source markers absent from the supplied catalog", "expected": {"occurrences": 1, "unknown": ["missing"], "unused_sources": ["a81"], "used": ["missing"], "valid": false}, "id": "citations-0081", "input": {"answer": "See [missing].", "sources": ["a81"]}}
 {"description": "require a source marker when citation mode is enabled", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": false}, "id": "citations-0082", "input": {"answer": "No marker.", "sources": []}}
 {"description": "allow uncited text when the explicit policy permits it", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": true}, "id": "citations-0083", "input": {"answer": "No marker.", "require_citation": false, "sources": []}}
+{"description": "reject repeated source catalog IDs", "expected_error": true, "id": "citations-0084", "input": {"answer": "[a84]", "sources": ["a84", "a84"]}}
