@@ -93,3 +93,4 @@
 {"description": "require a source marker when citation mode is enabled", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": false}, "id": "citations-0092", "input": {"answer": "No marker.", "sources": []}}
 {"description": "allow uncited text when the explicit policy permits it", "expected": {"occurrences": 0, "unknown": [], "unused_sources": [], "used": [], "valid": true}, "id": "citations-0093", "input": {"answer": "No marker.", "require_citation": false, "sources": []}}
 {"description": "reject repeated source catalog IDs", "expected_error": true, "id": "citations-0094", "input": {"answer": "[a94]", "sources": ["a94", "a94"]}}
+{"description": "validate repeated known source markers without judging answer truth", "expected": {"occurrences": 2, "unknown": [], "unused_sources": ["b95"], "used": ["a95"], "valid": true}, "id": "citations-0095", "input": {"answer": "See [a95] and [a95].", "sources": ["a95", "b95"]}}
